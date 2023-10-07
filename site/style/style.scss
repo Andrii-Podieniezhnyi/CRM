@@ -1,0 +1,75 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(../style/fonts/Montserrat-VariableFont_wght.ttf);
+    font-style: normal;
+}
+
+body{
+    margin: 0;
+    background: #f0f0f0;
+    font-family: Montserrat, sans-serif;
+    color: #333;
+}
+
+ul{
+    background-color: blue;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    li{
+        list-style: none;
+        text-align: center;
+        flex-grow: 1;
+        transition: background 400ms linear, color 400ms ease;
+        a{
+            color: yellow;
+            font-weight: bold;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100%;
+        }
+        img{
+            height: 107px;
+            margin-top: 95px;
+        }
+    }
+    li:hover{
+        background: yellow;
+        a{
+            color: blue;
+        }
+    }
+}
+
+.video-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1.5rem;
+    > * {
+        min-width: 25%;
+        max-width: 35%;
+        min-height: 350px;
+
+    }
+    video {
+        width: 100%;
+        border-radius: 10px;
+    }
+    :not(video){
+        padding: .5rem;
+    }
+}
+
+.video{
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    margin: 1rem;
+}

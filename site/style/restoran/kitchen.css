@@ -1,0 +1,150 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+}
+body {
+  margin: 0;
+  background-image: url(../../img/restoran/background_kitchen.jfif);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: Montserrat;
+}
+
+.menu_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+}
+
+.card_container {
+  width: 65rem;
+  position: relative;
+}
+
+.restoran__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 5rem;
+  margin-top: 1rem;
+  -webkit-backdrop-filter: blur(13px);
+          backdrop-filter: blur(13px);
+  border-radius: 50px;
+  background-color: rgba(236, 235, 233, 0.368627451);
+  -webkit-transition: -webkit-box-shadow 0.3s ease;
+  transition: -webkit-box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease, -webkit-box-shadow 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-animation: fadeIn 1.5s ease forwards;
+          animation: fadeIn 1.5s ease forwards;
+  height: 14rem;
+}
+
+@-webkit-keyframes fadeIn {
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.restoran__card:hover {
+  -webkit-box-shadow: 0 7px 10px rgba(192, 151, 45, 0.77);
+          box-shadow: 0 7px 10px rgba(192, 151, 45, 0.77);
+}
+
+.prod_name__container {
+  width: 17rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.prod_name__container .name {
+  width: 12rem;
+  font-weight: bold;
+}
+
+.card_img {
+  border-radius: 50px;
+  height: 193px;
+}
+
+.img_container img {
+  border-radius: 50px;
+  width: 310px;
+}
+
+.description__container {
+  width: 23rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 15rem;
+}
+.description p {
+  font-size: small;
+}
+.description .product_weigth {
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+@media (min-width: 768px) {
+  .card_container {
+    width: 35rem;
+    margin: 2rem;
+  }
+  .restoran__card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-height: 30rem;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .prod_name__container .name {
+    width: auto;
+  }
+}

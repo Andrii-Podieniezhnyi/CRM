@@ -1,0 +1,159 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+
+body{
+    font-size: 1.4rem;
+    background-image: url(../../img/restoran/background_3.jpg);
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Montserrat;
+}
+
+.wrapper__main_page_content{
+    width: 25rem;
+}
+
+
+
+.wrapper__main_page_content li::before {                        
+    content: "";
+    background: rgba(0, 0, 0, .55);
+    backdrop-filter: blur(2px);
+    filter: blur(10px);
+    z-index: -1;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    border-radius: 50px;
+}
+
+.kitchen__btn {
+    border: 2px solid #ffde00;
+    box-shadow: 0px 0px 8px 0px rgba(255, 222, 0, .4);
+}
+
+.kitchen__btn::before {
+    border: 2px solid #ffde00;
+}
+
+.kitchen__btn:hover::before {
+        background: rgba(255, 222, 0, .55)
+}
+
+
+
+
+
+.bar__btn{
+    border: 2px solid #00f0ff;
+    box-shadow: 0px 0px 8px 0px rgba(0, 240, 255, .4);
+}
+
+.bar__btn::before {
+    border: 2px solid #00f0ff;
+}
+
+.bar__btn:hover::before{
+    background: rgba(0, 240, 255, .75);
+}
+
+
+
+
+.news__promotions__btn{
+    border: 2px solid #dd9ad2;
+    box-shadow: 0px 0px 8px 0px rgba(221, 154, 210, .4);
+}
+
+.news__promotions__btn::before{
+    border: 2px solid #dd9ad2;
+}
+
+.news__promotions__btn:hover::before{
+    background: rgb(151,120,209);
+}
+
+.content__main_page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 77vh;
+    justify-content: center;
+
+    ul{
+        list-style: none;
+    }
+
+    li{
+        display: flex;
+        justify-content: center;
+        border-radius: 50px;
+        margin-bottom: 2.4rem;
+        height: 64px;
+        width: 100%;
+        position: relative;
+    }
+
+    a{
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        color: white;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, .25);
+        font-size: 1.1rem;
+        font-weight: bold;
+        width: 100%;
+        height: 100%;
+        border-radius: 50px;
+        justify-content: center;
+        z-index: 3;
+        position: relative;
+    }
+}
+
+.footer__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img{
+        width: 167px;
+    }
+}
+
+.social{
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1rem;
+
+    .adress{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    a{
+        color: white;
+        text-decoration: none;
+    }
+
+    p{
+        margin: 10px;
+    }
+
+    img{
+        width: 30px;
+        height: 25px;
+    }
+}
